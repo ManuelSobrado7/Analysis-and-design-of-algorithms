@@ -9,7 +9,8 @@ Proyectos desarrollados:
 
 ![2020-04-03_00-53-20](2020-04-03_00-53-20.png)
 
-Certificados:
+Certificados:  
+
 -FULL STACK (FEDESOFT) 2018  
 
 -CURSO EN JAVA (NO ME ACUERDO EL NOMBRE DE LA EMPRESA) 2016
