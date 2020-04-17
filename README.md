@@ -46,7 +46,6 @@ leer_arreglo()
 
 - ***Burbuja bidireccional***: El algoritmo de ordenamiento de burbuja bidireccional también llamado ordenamiento cocktail intenta mejorar el rendimiento del ordenamiento burbuja realizando el recorrido de comparación en ambas direcciones, de esta manera  se puede realizar más de un intercambio por iteración.
 De la misma manera que el algoritmo de burbuja no se utiliza excepto para motivos pedagógicos por su falta de eficiencia pero sencillez de aplicación.  
-
 ~~~ 
 def burbuja_direccional(arrayN):
     izq = 0
@@ -113,13 +112,14 @@ def leer_arreglo():
     print("-----------------DESC---------------------------")
     burbuja_direccional_abajo(arrayN)
     print("---------BURBUJA BIDIRECCIONAL------------------")
-    ~~~ 
+    
+    
 leer_arreglo()
+~~~  
 
 - ***Gnome sort***: El algoritmo empieza comparando la primera pareja de valores. Si están en orden incrementa el puntero y vuelve a realizar la comparación: si no están en orden, se pasa el menor a la izquierda y el mayor a la derecha, y se reduce el puntero. Ahora la comparación es con el elemento anterior, y si no hay un elemento anterior se pasa al siguiente elemento. Cuando el puntero alcanza el extremo superior del array, ya está totalmente ordenado.
 Cuando compara hacia arriba va sin hacer intercambios, es que el par bajo examen está ordenado entre sí, y cuando compara hacia abajo, va haciendo intercambios. El proceso aparece como un zigzagueo continuo a un lado y otro.
 La operación empieza por el puntero en el punto más bajo y cuando llega al extremo superior ha terminado de ordenar el array.  
-
 ~~~ 
 def Gnome(lista):
 	i=1
@@ -171,7 +171,6 @@ def leer_arreglo():
 leer_arreglo()
 ~~~  
 - ***Insercion***: Ordenamiento por Inserción: Supóngase que se desea ordenar los siguientes claves del arreglo (A) utilizando el método de inserción directa el cual consiste en insertar un elemento del arreglo en la parte izquierda del mismo que ya se encuentra ordenada. Este proceso se repite desde el segundo hasta el n-esimo elemento.  
-
 ~~~ 
 def ordenamientoPorInsercion_abajo(unaLista):
    for indice in range(1,len(unaLista)):
@@ -222,10 +221,8 @@ leer_arreglo()
 ~~~  
 
 - ***Peine sort***: La idea básica es eliminar las tortugas , o valores pequeños cerca del final de la lista, ya que en un ordenamiento de burbuja éstos lenta la clasificación tremendamente. Conejos , los valores grandes de todo el principio de la lista, no plantean un problema en el ordenamiento de burbuja.
-
 En la ordenación de burbuja , cuando se comparan dos elementos cualesquiera, siempre tienen un hueco (distancia entre sí) de 1. La idea básica de peine tipo es que la brecha puede ser mucho mayor que 1. El bucle interior de ordenamiento de burbuja, la cual hace el real de intercambio , se modifica de tal manera que brecha entre elementos intercambiadas va hacia abajo (para cada iteración del bucle exterior) en pasos de un "reducir el factor" k : [ n / k , n / k 2 , n / k 3 , .. ., 1].
-
-La brecha comienza como la longitud de la lista n siendo ordenadas divide por el factor de contracción k (generalmente 1,3; ver abajo) y una pasada de la mencionada especie de burbuja modificada se aplica con la brecha. A continuación, la brecha se divide por el factor de contracción de nuevo, la lista está ordenada con esta nueva brecha, y el proceso se repite hasta que la diferencia es 1. En este punto, peine tipo continúa usando un hueco de 1 hasta que la lista está totalmente ordenadas. La etapa final de la clase es por lo tanto equivalente a una especie de burbuja, pero en ese momento la mayoría de las tortugas se han tratado, por lo que un ordenamiento de burbuja será eficiente.
+La brecha comienza como la longitud de la lista n siendo ordenadas divide por el factor de contracción k (generalmente 1,3; ver abajo) y una pasada de la mencionada especie de burbuja modificada se aplica con la brecha. A continuación, la brecha se divide por el factor de contracción de nuevo, la lista está ordenada con esta nueva brecha, y el proceso se repite hasta que la diferencia es 1. En este punto, peine tipo continúa usando un hueco de 1 hasta que la lista está totalmente ordenadas. La etapa final de la clase es por lo tanto equivalente a una especie de burbuja, pero en ese momento la mayoría de las tortugas se han tratado, por lo que un ordenamiento de burbuja será eficiente.  
 
 ~~~ 
 def siGap(gap):
@@ -274,7 +271,7 @@ def leer_arreglo():
 leer_arreglo()
 ~~~  
 
-- ***Quick sort***: En la práctica, es el algoritmo de ordenación más rápido conocido, su tiempo de ejecución promedio es O(n log (n)), siendo en el peor de los casos O(n2), caso altamente improbable. El hecho de que sea más rápido que otros algoritmos de ordenación con tiempo promedio de O(n log (n)) ( como SmoothSort o HeapSort ) viene dado por que QuickSort realiza menos operaciones ya que el método utilizado es el de partición.
+- ***Quick sort***: En la práctica, es el algoritmo de ordenación más rápido conocido, su tiempo de ejecución promedio es O(n log (n)), siendo en el peor de los casos O(n2), caso altamente improbable. El hecho de que sea más rápido que otros algoritmos de ordenación con tiempo promedio de O(n log (n)) ( como SmoothSort o HeapSort ) viene dado por que QuickSort realiza menos operaciones ya que el método utilizado es el de partición.  
 
 ~~~ 
 def quick_sort(lista):
@@ -318,8 +315,7 @@ quick_sort(numeros)
 print(numeros)
 ~~~  
 
-- ***Shell sort***: El algoritmo Shell sort mejora el ordenamiento por inserción comparando elementos separados por un espacio de varias posiciones. Esto permite que un elemento haga "pasos más grandes" hacia su posición esperada. Los pasos múltiples sobre los datos se hacen con tamaños de espacio cada vez más pequeños. El último paso del Shell sort es un simple ordenamiento por inserción, pero para entonces, ya está garantizado que los datos del vector están casi ordenados.
-
+- ***Shell sort***: El algoritmo Shell sort mejora el ordenamiento por inserción comparando elementos separados por un espacio de varias posiciones. Esto permite que un elemento haga "pasos más grandes" hacia su posición esperada. Los pasos múltiples sobre los datos se hacen con tamaños de espacio cada vez más pequeños. El último paso del Shell sort es un simple ordenamiento por inserción, pero para entonces, ya está garantizado que los datos del vector están casi ordenados.  
 ~~~ 
 def shell(lista):
     mitad = len(lista) // 2
@@ -387,7 +383,7 @@ def leer_arreglo():
 leer_arreglo()
 ~~~  
 
-- ***Selección sort***: Consiste en encontrar el menor de todos los elementos del vector e intercambiarlo con el que está en la primera posición. Luego el segundo mas pequeño, y así sucesivamente hasta ordenarlo todo.
+- ***Selección sort***: Consiste en encontrar el menor de todos los elementos del vector e intercambiarlo con el que está en la primera posición. Luego el segundo mas pequeño, y así sucesivamente hasta ordenarlo todo.  
 
 ~~~ 
 def seleccion_arriba(lista):
@@ -444,10 +440,6 @@ def leer_arreglo():
 
 leer_arreglo()
 ~~~  
-
-
-
-
 
 Proyectos desarrollados:
 
