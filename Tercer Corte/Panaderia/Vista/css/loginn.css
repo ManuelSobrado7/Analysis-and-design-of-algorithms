@@ -1,0 +1,66 @@
+body{
+  color: #red;
+  font-family:'Gabriola';
+
+}
+
+.login{
+  width: 400px;
+}
+
+.login fieldset{
+  border: 1px solid silver;
+  font-size:30px;
+}
+
+.login input{
+  font-family:'Gabriola';
+}
+
+.login input[type = text],
+.login input[type = password]{
+    text-align: center;
+    padding: .5em .6em;
+    border: 1px solid #ccc;
+    box-shadow: inset  100px 100px #FFE2F7;
+    border-radius: 10px;
+    font-size:25px;
+
+}
+
+
+.login input[type = reset],
+.login button{
+  background-color: #69E09D;
+  color: black;
+  padding: .5em 1em;
+  border:0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size:25px;
+}
+
+a{
+  color: #124FDD;
+  text-decoration: none;
+  font-size:35px;
+}
+
+.login legend{
+  font-size:45px;
+}
+
+#formulario h1{
+  font-size:45px;
+  color: #A914AA;
+
+}
+
+.login button{
+  font-family:'Gabriola'
+}
+
+#contenedor{
+  background-color: #FCBAED;
+  padding: 10px;
+}
