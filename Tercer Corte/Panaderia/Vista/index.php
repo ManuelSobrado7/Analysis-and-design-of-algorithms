@@ -20,7 +20,7 @@ session_destroy();
       <div class="login">
         <form class="" action="../Controlador/login.php" method="post">
           <fieldset>
-            <legend style="color: #A914AA ">AmFru</legend>
+            <legend style="color: #A914AA ">Panaderia mi primer pan xd</legend>
           <p>
               <p style="color: #000000">Usuario</p>
               <input class="user1" type="text" name="usuario" value="" placeholder="Digita tu Usuario" title="Usuario requerido" required>
