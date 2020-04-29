@@ -22,7 +22,7 @@ session_destroy();
       <div class="login">
         <form class=""  method="post">
           <fieldset>
-            <legend style="color: #A914AA ">AmFru</legend>
+            <legend style="color: #A914AA ">Panaderia mi primer pan xd</legend>
             <p>
                 <p style="color: #000000">Id</p>
                 <input id="id" type="text" id="nombre" value="" placeholder="Digita tu cedula" title="Campos requeridos" required>
